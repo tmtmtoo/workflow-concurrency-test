@@ -12,5 +12,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: date
-            - run: sleep 60 * 3
+            - run: sleep $((60 * 3))
             - run: date
