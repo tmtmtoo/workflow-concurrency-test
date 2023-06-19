@@ -1,0 +1,16 @@
+name: concurrency-test
+
+on:
+    push:
+        branches:
+        - main
+
+concurrency: hoge
+
+jobs:
+    concurrency-test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: date
+            - run: sleep 60 * 3
+            - run: date
